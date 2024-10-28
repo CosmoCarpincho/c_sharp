@@ -1,5 +1,4 @@
-﻿
-int isMultiply3OrMultiply5(int value)
+﻿int isMultiply3OrMultiply5(int value)
 {
 
     return value switch
@@ -18,3 +17,18 @@ for (int i = 0; i < n; i++)
     total += isMultiply3OrMultiply5(i);
 
 Console.WriteLine(total);
+
+try
+{
+    int sol3 = OtherSolutions.Solution3(-10);
+    Console.WriteLine(sol3);
+}
+catch (System.Exception)
+{
+    Console.WriteLine("Número negativo OJO");
+
+}
+
+
+int sol4 = OtherSolutions.Solution4(-3);
+Console.WriteLine($"Sol 4 -> {sol4}");
